@@ -1,0 +1,45 @@
+.underline {
+  background-color: aqua;
+  font-size: 28px;
+  font-weight: 700;
+  width: 500px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.overline {
+  background-color: gray;
+  font-size: 28px;
+  font-weight: 700;
+  width: 500px;
+  text-decoration: overline;
+  margin-top: 10px;
+}
+
+.line-through {
+  background-color: gray;
+  font-size: 28px;
+  font-weight: 700;
+  width: 500px;
+  text-decoration: line-through;
+  margin-top: 10px;
+}
+
+.none a {
+  display: inline-block;
+  background-color: gray;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.underline-overline {
+  background-color: pink;
+  width: 600px;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: underline overline;
+  margin-top: 10px;
+}
