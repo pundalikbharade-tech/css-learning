@@ -1,0 +1,27 @@
+.uppercase {
+  width: 500px;
+  background-color: aqua;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.lowercase {
+  width: 500px;
+  background-color: grey;
+  font-size: 24px;
+  text-transform: lowercase;
+  margin-top: 10px;
+}
+.capitalize {
+  width: 500px;
+  background-color: green;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.none {
+  width: 500px;
+  background-color: pink;
+  font-size: 24px;
+  text-transform: none;
+  margin-top: 10px;
+}
