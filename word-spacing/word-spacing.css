@@ -1,0 +1,27 @@
+.normal {
+  width: 400px;
+  font-size: 24px;
+  background-color: aqua;
+  word-spacing: normal;
+}
+.small {
+  width: 400px;
+  font-size: 24px;
+  background-color: green;
+  word-spacing: 5px;
+  margin-top: 10px;
+}
+.medium {
+  width: 400px;
+  font-size: 24px;
+  background-color: pink;
+  word-spacing: 15px;
+  margin-top: 10px;
+}
+.large {
+  width: 450px;
+  font-size: 24px;
+  background-color: gray;
+  word-spacing: 30px;
+  margin-top: 10px;
+}
