@@ -1,0 +1,35 @@
+.height-width-px {
+  width: 1000px;
+  background-color: aqua;
+  height: 300px;
+}
+
+.height-width-p {
+  width: 1000px;
+  background-color: grey;
+  height: 300px;
+}
+
+.height-width-percentage2 {
+  width: 50%;
+  background-color: green;
+  height: 250px;
+}
+
+.height-width-auto {
+  width: auto;
+  background-color: pink;
+  height: 300px;
+}
+
+.height-width-auto2 {
+  width: 1000px;
+  background-color: aqua;
+  height: 300px;
+}
+
+.height-width-auto3 {
+  width: auto;
+  background-color: gray;
+  height: 300px;
+}
