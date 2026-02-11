@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 500px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        background-color: green;
+        height: 80px;
+      }
+      .middle {
+        display: flex;
+        flex: 1;
+      }
+      .sidebar {
+        width: 30%;
+        background-color: palegreen;
+      }
+      .content {
+        width: 70%;
+        background-color: aqua;
+      }
+      .content-row {
+        display: flex;
+        height: 170px;
+      }
+      .card1 {
+        width: 50%;
+        background-color: red;
+      }
+      .card2 {
+        width: 50%;
+        background-color: goldenrod;
+      }
+      .footer {
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Logo| <a href="">search|profile|logout</a></div>
+      <div class="middle">
+        <div class="sidebar">
+          <ul>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Users</a></li>
+            <li><a href="">Orders</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Settings</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="content-row">
+            <div class="card1">card1</div>
+            <div class="card2">card2</div>
+          </div>
+          <div>card3</div>
+        </div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
