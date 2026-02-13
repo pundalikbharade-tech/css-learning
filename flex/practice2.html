@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+      }
+      .header {
+        background-color: green;
+        height: 70px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        font-size: larger;
+      }
+      .nav {
+        background-color: yellow;
+        height: 40px;
+      }
+      .nav ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        justify-content: center;
+      }
+      .nav a {
+        text-decoration: none;
+      }
+      .middle {
+        display: flex;
+      }
+      .content {
+        width: 40%;
+        height: 400px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .side {
+        width: 60%;
+        background-color: fuchsia;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-description {
+        display: flex;
+        background-color: green;
+        height: 250px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      .product {
+        display: flex;
+        height: 300px;
+        background-color: aqua;
+      }
+      .box {
+        width: 33.33%;
+        border: 1px solid black;
+      }
+      .footer {
+        height: 80px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>Logo |</div>
+
+        <div>Search Bar |</div>
+
+        <div>Cart |</div>
+
+        <div>Profile |</div>
+
+        <div>Menu</div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="">Home ></a></li>
+
+          <li><a href="">Category ></a></li>
+
+          <li><a href="">Product </a></li>
+        </ul>
+      </div>
+      <div class="middle">
+        <div class="content">
+          PRODUCT IMAGES <br />
+          (Main + Thumbs)
+        </div>
+        <div class="side">
+          PRODUCT DETAILS <br />
+          -Product Tilte <br />
+          -Price/Discount <br />
+          -Rating
+        </div>
+      </div>
+      <div class="section">
+        <div class="product-description">Details|Specs|Reviews (Tabs)</div>
+        <div class="product">
+          <div class="box">product</div>
+          <div class="box">product</div>
+          <div class="box">product</div>
+        </div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
