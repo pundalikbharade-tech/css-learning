@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar Layout</title>
+    <style>
+      .page {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        min-height: 100vh;
+      }
+      header {
+        background-color: red;
+      }
+      nav {
+        background-color: azure;
+      }
+      .hero {
+        background-color: blue;
+      }
+      section {
+        background-color: aquamarine;
+      }
+      aside {
+        background-color: brown;
+      }
+      footer {
+        background-color: aqua;
+      }
+      @media (min-width: 600px) {
+        .page {
+          grid-template-columns: 2fr 1fr;
+        }
+        header,
+        nav,
+        .hero,
+        footer {
+          grid-column: 1/-1;
+        }
+      }
+      @media (min-width: 1024px) {
+        .page {
+          grid-template-columns: 1fr 2fr;
+        }
+        header,
+        nav,
+        footer {
+          grid-column: 1/-1;
+        }
+        aside {
+          grid-column: 1/2;
+          grid-row: 3/5;
+        }
+        .hero {
+          grid-column: 2/3;
+        }
+        section {
+          grid-column: 2/3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>Header</header>
+      <nav>Nav</nav>
+      <div class="hero">Hero</div>
+      <section>Content</section>
+      <aside>Sidebar</aside>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
