@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid Layout</title>
+    <style>
+      .page {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        gap: 10px;
+      }
+      header {
+        background-color: aqua;
+        text-align: center;
+      }
+      nav {
+        background-color: red;
+        text-align: center;
+      }
+      aside {
+        background-color: pink;
+        text-align: center;
+      }
+      section {
+        display: grid;
+        grid-auto-rows: auto;
+        gap: 10px;
+      }
+      section div:nth-child(4) {
+        display: none;
+      }
+      .card {
+        background-color: yellow;
+        text-align: center;
+      }
+      footer {
+        background-color: aqua;
+        text-align: center;
+      }
+      @media (min-width: 600px) {
+        .page {
+          grid-template-columns: 1fr 1fr;
+        }
+        header,
+        footer,
+        nav,
+        aside {
+          grid-column: 1/-1;
+        }
+        section {
+          grid-column: 1/-1;
+          grid-template-columns: 1fr 1fr;
+        }
+        section div:nth-child(4) {
+          display: grid;
+        }
+      }
+      @media (min-width: 1024px) {
+        .page {
+          grid-template-columns: 1fr 1fr;
+        }
+        header,
+        nav,
+        footer {
+          grid-column: 1/-1;
+        }
+        aside {
+          grid-column: 1/2;
+        }
+        section {
+          grid-column: 2/3;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>Header</header>
+      <nav>Nav</nav>
+      <aside>Aside</aside>
+      <section>
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+      </section>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
