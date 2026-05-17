@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        background-color: green;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
+      }
+      .header-right {
+        display: flex;
+      }
+      .nav {
+        height: 80px;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      .nav a {
+        text-decoration: none;
+      }
+      .content {
+        display: flex;
+        flex: 1;
+      }
+      .content > div:nth-child(1) {
+        width: 50%;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content > div:nth-child(2) {
+        width: 50%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>Logo</div>
+        <div class="header-right">
+          <div>Login|</div>
+          <div>Signup</div>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="">Home |</a></li>
+          <li><a href="">About |</a></li>
+          <li><a href="">Blog |</a></li>
+          <li><a href="">Contact |</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div>CARD1</div>
+        <div>CARD2</div>
+      </div>
+      <div class="footer">© 2026 My Website</div>
+    </div>
+  </body>
+</html>
